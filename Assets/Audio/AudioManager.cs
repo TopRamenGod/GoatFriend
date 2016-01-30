@@ -10,8 +10,7 @@ public class AudioManager : MonoBehaviour {
 
 	// Use this for initialization
 	public AudioSource efxSource;
-	public AudioSource musicSource; 
-
+	public AudioSource musicSource;
 
 	// for paused/unpaused transitions
 	public AudioMixerSnapshot paused; 
@@ -56,7 +55,7 @@ public class AudioManager : MonoBehaviour {
 		
 	// can input objects as a comma separated list
 	// and will be inserted into the array because of params keyword
-	public void RandomizeSfx(params AudioClip[] clips) {
+	public void randomizeSheepVocals(params AudioClip[] clips) {
 		int randomIndex = Random.Range (0, clips.Length); 
 		float randomPitch = Random.Range(lowPitchRange, highPitchRange);
 			
@@ -65,6 +64,14 @@ public class AudioManager : MonoBehaviour {
 		efxSource.Play (); 
 	}
 
+	public void randomizeBounceSounds(params AudioClip[] clips) {
+		int randomIndex = Random.Range (0, clips.Length); 
+		float randomPitch = Random.Range(lowPitchRange, highPitchRange);
+
+		efxSource.pitch = randomPitch;
+		efxSource.clip = clips [randomIndex];
+		efxSource.Play (); 
+	}
 
 	// call this when pause has been done
 	public void playPauseSound() {
