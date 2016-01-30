@@ -1,0 +1,367 @@
+fileFormatVersion: 2
+guid: 7db177f157de5b0498d557b055588dd8
+timeCreated: 1454188605
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SLOW_SLIDEredo_0
+    21300002: SLOW_SLIDEredo_1
+    21300004: SLOW_SLIDEredo_2
+    21300006: SLOW_SLIDEredo_3
+    21300008: SLOW_SLIDEredo_4
+    21300010: SLOW_SLIDEredo_5
+    21300012: SLOW_SLIDEredo_6
+    21300014: SLOW_SLIDEredo_7
+    21300016: SLOW_SLIDEredo_8
+    21300018: SLOW_SLIDEredo_9
+    21300020: SLOW_SLIDEredo_10
+    21300022: SLOW_SLIDEredo_11
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: SLOW_SLIDEredo_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 603
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 44, y: 134.1496}
+        - {x: -24, y: 134.1496}
+        - {x: -84, y: 39.149597}
+        - {x: -57, y: 4.149597}
+        - {x: -49, y: 2.1495972}
+        - {x: -47, y: 2.1495972}
+        - {x: -49, y: 2.1495972}
+        - {x: -66, y: 7.149597}
+        - {x: -86, y: 6.149597}
+        - {x: -108, y: 1.1495972}
+        - {x: -117, y: -10.850403}
+        - {x: -117, y: -84.8504}
+        - {x: -115, y: -92.8504}
+        - {x: -68, y: -111.8504}
+        - {x: -3, y: -111.8504}
+        - {x: 42, y: -86.8504}
+        - {x: 47, y: -64.8504}
+        - {x: 116, y: 65.1496}
+        - {x: 116, y: 102.1496}
+    - name: SLOW_SLIDEredo_1
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 603
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 116.156525, y: 112.1496}
+        - {x: 69.156525, y: 134.1496}
+        - {x: -18.843475, y: 134.1496}
+        - {x: -80.843475, y: 46.149597}
+        - {x: -115.843475, y: -12.850403}
+        - {x: -115.843475, y: -85.8504}
+        - {x: -48.843475, y: -111.8504}
+        - {x: -7.8434753, y: -111.8504}
+        - {x: 6.1565247, y: -106.8504}
+        - {x: 48.156525, y: -67.8504}
+        - {x: 67.156525, y: 26.149597}
+        - {x: 116.156525, y: 75.1496}
+    - name: SLOW_SLIDEredo_2
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 603
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 116.31305, y: 97.1496}
+        - {x: 105.31305, y: 110.1496}
+        - {x: 47.31305, y: 134.1496}
+        - {x: -12.686951, y: 134.1496}
+        - {x: -116.68695, y: 25.149597}
+        - {x: -116.68695, y: -95.8504}
+        - {x: -78.68695, y: -111.8504}
+        - {x: 7.3130493, y: -111.8504}
+        - {x: 50.31305, y: -64.8504}
+        - {x: 67.31305, y: 27.149597}
+        - {x: 116.31305, y: 69.1496}
+    - name: SLOW_SLIDEredo_3
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 603
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 76.46954, y: 110.1496}
+        - {x: 36.469543, y: 134.1496}
+        - {x: -23.530457, y: 134.1496}
+        - {x: -63.530457, y: 121.1496}
+        - {x: -115.53046, y: 26.149597}
+        - {x: -115.53046, y: -96.8504}
+        - {x: -58.530457, y: -111.8504}
+        - {x: 20.469543, y: -111.8504}
+        - {x: 69.46954, y: -41.850403}
+        - {x: 115.46954, y: 64.1496}
+        - {x: 115.46954, y: 126.1496}
+    - name: SLOW_SLIDEredo_4
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 603
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 114.1261, y: 114.1496}
+        - {x: 96.1261, y: 132.1496}
+        - {x: 79.1261, y: 134.1496}
+        - {x: -16.873901, y: 134.1496}
+        - {x: -48.8739, y: 98.1496}
+        - {x: -115.8739, y: 0.14959717}
+        - {x: -115.8739, y: -82.8504}
+        - {x: -78.8739, y: -100.8504}
+        - {x: -41.8739, y: -111.8504}
+        - {x: -11.873901, y: -111.8504}
+        - {x: 7.1260986, y: -107.8504}
+        - {x: 52.1261, y: -65.8504}
+        - {x: 67.1261, y: 24.149597}
+        - {x: 114.1261, y: 94.1496}
+    - name: SLOW_SLIDEredo_5
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 603
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 103.28259, y: 123.1496}
+        - {x: 72.28259, y: 134.1496}
+        - {x: -20.717407, y: 134.1496}
+        - {x: -51.717407, y: 92.1496}
+        - {x: -71.71741, y: 40.149597}
+        - {x: -116.71741, y: 2.1495972}
+        - {x: -116.71741, y: -85.8504}
+        - {x: -73.71741, y: -111.8504}
+        - {x: 8.282593, y: -111.8504}
+        - {x: 52.282593, y: -65.8504}
+        - {x: 114.28259, y: 90.1496}
+        - {x: 114.28259, y: 114.1496}
+    - name: SLOW_SLIDEredo_6
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 603
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46.560913, y: 134.1496}
+        - {x: -94.56091, y: 113.1496}
+        - {x: -71.56091, y: 26.149597}
+        - {x: -56.560913, y: 4.149597}
+        - {x: -48.560913, y: 2.1495972}
+        - {x: -46.560913, y: 2.1495972}
+        - {x: -48.560913, y: 2.1495972}
+        - {x: -65.56091, y: 7.149597}
+        - {x: -85.56091, y: 6.149597}
+        - {x: -107.56091, y: 1.1495972}
+        - {x: -116.56091, y: -10.850403}
+        - {x: -116.56091, y: -84.8504}
+        - {x: -114.56091, y: -92.8504}
+        - {x: -67.56091, y: -111.8504}
+        - {x: 1.4390869, y: -111.8504}
+        - {x: 46.439087, y: -89.8504}
+        - {x: 112.43909, y: 51.149597}
+        - {x: 112.43909, y: 128.1496}
+        - {x: 107.43909, y: 134.1496}
+    - name: SLOW_SLIDEredo_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 303
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 112, y: 89.99307}
+        - {x: 91, y: 132.99307}
+        - {x: -24, y: 132.99307}
+        - {x: -57, y: 75.99307}
+        - {x: -80, y: 30.993073}
+        - {x: -117, y: -7.0069275}
+        - {x: -117, y: -80.00693}
+        - {x: -111, y: -97.00693}
+        - {x: -62, y: -113.00693}
+        - {x: -9, y: -113.00693}
+        - {x: 20, y: -100.00693}
+        - {x: 50, y: -65.00693}
+        - {x: 88, y: 41.993073}
+        - {x: 112, y: 50.993073}
+    - name: SLOW_SLIDEredo_8
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 303
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 113.156525, y: 58.993073}
+        - {x: 113.156525, y: 100.99307}
+        - {x: 62.156525, y: 132.99307}
+        - {x: -9.843475, y: 132.99307}
+        - {x: -71.843475, y: 96.99307}
+        - {x: -115.843475, y: 33.993073}
+        - {x: -115.843475, y: -85.00693}
+        - {x: -67.843475, y: -112.00693}
+        - {x: -61.843475, y: -113.00693}
+        - {x: 2.1565247, y: -113.00693}
+        - {x: 55.156525, y: -68.00693}
+        - {x: 54.156525, y: 6.9930725}
+        - {x: 110.156525, y: 52.993073}
+    - name: SLOW_SLIDEredo_9
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 303
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 109.31305, y: 61.993073}
+        - {x: 81.31305, y: 117.99307}
+        - {x: 69.31305, y: 106.99307}
+        - {x: 48.31305, y: 132.99307}
+        - {x: -27.68695, y: 132.99307}
+        - {x: -115.68695, y: 13.9930725}
+        - {x: -115.68695, y: -85.00693}
+        - {x: -76.68695, y: -113.00693}
+        - {x: 7.3130493, y: -113.00693}
+        - {x: 26.31305, y: -110.00693}
+        - {x: 49.31305, y: -66.00693}
+        - {x: 54.31305, y: -30.006927}
+        - {x: 109.31305, y: 31.993073}
+    - name: SLOW_SLIDEredo_10
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 303
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 111.46954, y: 57.993073}
+        - {x: 94.46954, y: 128.99307}
+        - {x: 73.46954, y: 132.99307}
+        - {x: -23.530457, y: 132.99307}
+        - {x: -58.530457, y: 91.99307}
+        - {x: -113.53046, y: -3.0069275}
+        - {x: -113.53046, y: -77.00693}
+        - {x: -109.53046, y: -89.00693}
+        - {x: -64.53046, y: -110.00693}
+        - {x: -50.530457, y: -113.00693}
+        - {x: 2.4695435, y: -113.00693}
+        - {x: 58.469543, y: -68.00693}
+        - {x: 93.46954, y: 31.993073}
+        - {x: 111.46954, y: 39.993073}
+    - name: SLOW_SLIDEredo_11
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 303
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 109.1261, y: 57.993073}
+        - {x: 79.1261, y: 114.99307}
+        - {x: 49.1261, y: 132.99307}
+        - {x: -15.873901, y: 132.99307}
+        - {x: -52.8739, y: 97.99307}
+        - {x: -79.8739, y: 19.993073}
+        - {x: -115.8739, y: 7.9930725}
+        - {x: -115.8739, y: -77.00693}
+        - {x: -109.8739, y: -102.00693}
+        - {x: -66.8739, y: -113.00693}
+        - {x: 4.1260986, y: -113.00693}
+        - {x: 51.1261, y: -67.00693}
+        - {x: 105.1261, y: 35.993073}
+        - {x: 109.1261, y: 37.993073}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

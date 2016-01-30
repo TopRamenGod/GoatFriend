@@ -14,6 +14,24 @@ public class GoatManager : TouchableBehaviour {
 
     public GoatState State;
 
+
+    void Update(){
+
+        float direction = Vector3.Dot(gameObject.GetComponent<Rigidbody2D>().velocity, Vector3.right);
+        Vector3 scale = transform.localScale;
+
+        //Right
+        if( direction > 0){
+            scale.x = -1 * Mathf.Abs(scale.x);
+        }else{
+            scale.x =  Mathf.Abs(scale.x);
+        }
+
+        transform.localScale = scale;
+    }
+
+   
+
     void Start(){
         State = GoatState.Hanging;
     }
