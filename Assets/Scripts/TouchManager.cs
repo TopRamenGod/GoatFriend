@@ -9,6 +9,7 @@ public class TouchManager : MonoBehaviour {
     public TouchPool touchPool;
     public LayerMask backgroundLayer;
 
+
     public bool MouseDebug;
 
     void Update(){
@@ -60,13 +61,16 @@ public class TouchManager : MonoBehaviour {
 
     public Vector3 ScreenToWorldPosition(Vector2 screenPosition){
 
+
+
         Ray ray = Camera.main.ScreenPointToRay(screenPosition);
+
         RaycastHit hit;
 
         if( Physics.Raycast(ray, out hit, 50.0f, backgroundLayer)){
 //            Debug.Log("Touch world at "+ hit.point);
         }
 
-        return new Vector3(hit.point.x, hit.point.y, 0);
+        return new Vector3(hit.point.x, hit.point.y , 0);
     }
 }

@@ -1,9 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DonkeyManager : TouchableBehaviour {
+
+public enum GoatState{
+    Hanging,
+    Falling,
+    Saved,
+    Dead
+}
+public class GoatManager : TouchableBehaviour {
 
     public Transform basePlatform;
+
+    public GoatState State;
+
+    void Start(){
+        State = GoatState.Hanging;
+    }
 
     public override void OnTouchStart(Vector3 position)
     {
@@ -25,10 +38,12 @@ public class DonkeyManager : TouchableBehaviour {
     }
 
 
-    public void ReleaseDonkey(){
+    public void ReleaseGoat(){
         //Break Hinges
         gameObject.GetComponent<HingeJoint2D>().enabled = false;
         //gameObject.GetComponent<Rigidbody2D>().velocity *= 1.5f;
+
+        State = GoatState.Falling;
     }
 
 
@@ -37,10 +52,12 @@ public class DonkeyManager : TouchableBehaviour {
 
         if( col.gameObject.tag == "ExitTrigger"){
             Debug.Log("HIT Exit Trigger");
+            State = GoatState.Saved;
         }
 
         if( col.gameObject.tag == "DeathTrigger"){
             Debug.Log("You are dead");
+            State = GoatState.Dead;
         }
 
     }
