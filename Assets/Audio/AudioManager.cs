@@ -24,6 +24,16 @@ public class AudioManager : MonoBehaviour {
 	public float highPitchRange = 1.05f;
 
 
+    public AudioClip sheep1;
+    public AudioClip sheep2;
+    public AudioClip sheep3;
+
+    public AudioClip bounce1;
+    public AudioClip bounce2;
+
+    public AudioClip burnt;
+
+
 	void Awake () {
 		if (instance == null) {
 			instance = this;
@@ -53,7 +63,7 @@ public class AudioManager : MonoBehaviour {
 		efxSource.Play (); 
 	}
 
-	public void randomizeBounceSounds(params AudioClip[] clips) {
+	public void PlayRandomSounds(params AudioClip[] clips) {
 		int randomIndex = Random.Range (0, clips.Length); 
 		float randomPitch = Random.Range(lowPitchRange, highPitchRange);
 
@@ -77,6 +87,22 @@ public class AudioManager : MonoBehaviour {
 	public void unPausedMusic() {
 		unpaused.TransitionTo (.01f);
 	}
+
+
+
+    public void playBounce(){
+        PlayRandomSounds(bounce1, bounce2);
+    }
+
+
+    public void playSheep(){
+        PlayRandomSounds(sheep1, sheep2, sheep3);
+    }
+
+    public void playBurnt(){
+        PlaySingleEffect(burnt);
+    }
+
 
 
 		

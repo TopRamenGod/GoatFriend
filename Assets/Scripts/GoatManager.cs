@@ -39,6 +39,8 @@ public class GoatManager : TouchableBehaviour {
     public override void OnTouchStart(Vector3 position)
     {
         gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
+
+        AudioManager.instance.playSheep();
     }
 
     public override void OnTouchHeld(Vector3 position)
@@ -62,9 +64,21 @@ public class GoatManager : TouchableBehaviour {
         //gameObject.GetComponent<Rigidbody2D>().velocity *= 1.5f;
 
         State = GoatState.Falling;
+
+        AudioManager.instance.playSheep();
     }
 
+    void OnCollisionEnter2D(Collision2D col){
 
+        if( col.gameObject.tag == "SolidPlatform"){
+            AudioManager.instance.playSheep();
+        }
+
+        if( col.gameObject.tag == "BouncyPlatform"){
+            AudioManager.instance.playBounce();
+        }
+            
+    }
 
     void OnTriggerEnter2D(Collider2D col){
 
@@ -76,6 +90,8 @@ public class GoatManager : TouchableBehaviour {
         if( col.gameObject.tag == "DeathTrigger"){
             Debug.Log("You are dead");
             State = GoatState.Dead;
+
+            AudioManager.instance.playBurnt();
         }
 
     }
