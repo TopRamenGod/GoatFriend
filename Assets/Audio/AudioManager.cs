@@ -13,8 +13,18 @@ public class AudioManager : MonoBehaviour {
 	public AudioSource musicSource; 
 
 
+	// for paused/unpaused transitions
 	public AudioMixerSnapshot paused; 
 	public AudioMixerSnapshot unpaused; 
+
+
+	// for level music transitions
+	public AudioMixerSnapshot l1; 
+	public AudioMixerSnapshot l2; 
+	public AudioMixerSnapshot l3; 
+	public AudioMixerSnapshot l4; 
+	public AudioMixerSnapshot l5; 
+	public AudioMixerSnapshot l6; 
 
 	// Singleton
 	public static AudioManager instance = null;
@@ -72,17 +82,17 @@ public class AudioManager : MonoBehaviour {
 		unpaused.TransitionTo (.01f);
 	}
 
-	public void level1Transition() {
+	public void playlevel1Music() {
 		
 	}
 
-	public void level2Transition() {
+	public void playlevel2Music() {
 	}
 
-	public void level3Transition() {
+	public void playlevel3Music() {
 	}
 
-	public void level4Transition() {
+	public void playlevel4Music() {
 	}
 
 		
