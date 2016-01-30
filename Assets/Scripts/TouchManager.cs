@@ -64,7 +64,7 @@ public class TouchManager : MonoBehaviour {
         RaycastHit hit;
 
         if( Physics.Raycast(ray, out hit, 50.0f, backgroundLayer)){
-            Debug.Log("Touch world at "+ hit.point);
+//            Debug.Log("Touch world at "+ hit.point);
         }
 
         return new Vector3(hit.point.x, hit.point.y, 0);

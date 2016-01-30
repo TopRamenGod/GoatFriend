@@ -26,6 +26,8 @@ public class TouchPool : MonoBehaviour {
 
         GameObject obj = getTouchObject(i);
 
+        obj.GetComponent<TouchPoint>().SendTouchLeaveMessage();
+
         obj.SetActive(false);
     }
 
