@@ -28,7 +28,21 @@ public class DonkeyManager : TouchableBehaviour {
     public void ReleaseDonkey(){
         //Break Hinges
         gameObject.GetComponent<HingeJoint2D>().enabled = false;
-        gameObject.GetComponent<Rigidbody2D>().velocity *= 1.5f;
+        //gameObject.GetComponent<Rigidbody2D>().velocity *= 1.5f;
+    }
+
+
+
+    void OnTriggerEnter2D(Collider2D col){
+
+        if( col.gameObject.tag == "ExitTrigger"){
+            Debug.Log("HIT Exit Trigger");
+        }
+
+        if( col.gameObject.tag == "DeathTrigger"){
+            Debug.Log("You are dead");
+        }
+
     }
 
 }
