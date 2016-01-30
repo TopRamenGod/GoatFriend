@@ -17,15 +17,6 @@ public class AudioManager : MonoBehaviour {
 	public AudioMixerSnapshot unpaused; 
 
 
-	// for level music transitions
-	public AudioMixerSnapshot l1; 
-	public AudioMixerSnapshot l2; 
-	public AudioMixerSnapshot l3; 
-	public AudioMixerSnapshot l4; 
-	public AudioMixerSnapshot l5; 
-	public AudioMixerSnapshot l6; 
-
-	// Singleton
 	public static AudioManager instance = null;
 
 	// pitch variations for pitch of sound effects
@@ -34,13 +25,11 @@ public class AudioManager : MonoBehaviour {
 
 
 	void Awake () {
-		if (instance = null) {
+		if (instance == null) {
 			instance = this;
-			print ("sdfasd"); 
 		}
 //		} else if (instance != this) {
 //			Destroy (gameObject);
-//			print ("DFJD"); 
 //		}
 		
 //		DontDestroyOnLoad (gameObject); 
@@ -48,7 +37,7 @@ public class AudioManager : MonoBehaviour {
 	}
 
 
-	public void PlaySingleClip (AudioClip clip) {
+	public void PlaySingleEffect (AudioClip clip) {
 		efxSource.clip = clip;
 		efxSource.Play();
 	}
@@ -89,18 +78,6 @@ public class AudioManager : MonoBehaviour {
 		unpaused.TransitionTo (.01f);
 	}
 
-	public void playlevel1Music() {
-		
-	}
-
-	public void playlevel2Music() {
-	}
-
-	public void playlevel3Music() {
-	}
-
-	public void playlevel4Music() {
-	}
 
 		
 }
