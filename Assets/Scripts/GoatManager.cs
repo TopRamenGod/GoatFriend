@@ -20,13 +20,20 @@ public class GoatManager : TouchableBehaviour {
         float direction = Vector3.Dot(gameObject.GetComponent<Rigidbody2D>().velocity, Vector3.right);
         Vector3 scale = transform.localScale;
 
+
         //Right
-        if( direction > 0){
+        if( direction > 0.2){
             scale.x = -1 * Mathf.Abs(scale.x);
-        }else{
+        //Left
+        }else if ( direction < -0.2){
+            scale.x =  Mathf.Abs(scale.x);
+        }
+        //Stationary
+        else{
             scale.x =  Mathf.Abs(scale.x);
         }
 
+        GetComponent<Animator>().SetFloat("horSpeed", Mathf.Abs(direction));
         transform.localScale = scale;
     }
 
@@ -85,6 +92,8 @@ public class GoatManager : TouchableBehaviour {
         if( col.gameObject.tag == "ExitTrigger"){
             Debug.Log("HIT Exit Trigger");
             State = GoatState.Saved;
+
+            LevelManager.Instance.ShowWinScreen();
         }
 
         if( col.gameObject.tag == "DeathTrigger"){
@@ -92,6 +101,19 @@ public class GoatManager : TouchableBehaviour {
             State = GoatState.Dead;
 
             AudioManager.instance.playBurnt();
+
+            UnityTimer.Instance.CallAfterDelay(() => {
+                LevelManager.Instance.ShowDieScreen();
+            }, 1.0f);
+        }
+
+        if( col.gameObject.tag == "Collectible"){
+            Destroy(col.gameObject);
+            LevelManager.Instance.AddStar();
+
+            GetComponent<ParticleSystem>().Play();
+
+            AudioManager.instance.playCollect();
         }
 
     }

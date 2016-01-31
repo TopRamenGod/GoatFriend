@@ -1,0 +1,723 @@
+fileFormatVersion: 2
+guid: 0f6fc65c55ebe8f49ae207bd4bc47d45
+timeCreated: 1454206132
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: happylava_0
+    21300002: happylava_1
+    21300004: happylava_2
+    21300006: happylava_3
+    21300008: happylava_4
+    21300010: happylava_5
+    21300012: happylava_6
+    21300014: happylava_7
+    21300016: happylava_8
+    21300018: happylava_9
+    21300020: happylava_10
+    21300022: happylava_11
+    21300024: happylava_12
+    21300026: happylava_13
+    21300028: happylava_14
+    21300030: happylava_15
+    21300032: happylava_16
+    21300034: happylava_17
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: happylava_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1575
+        width: 600
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 153, y: -117}
+        - {x: 268, y: -100}
+        - {x: 285, y: -95}
+        - {x: 285, y: -82}
+        - {x: 281, y: -75}
+        - {x: 241, y: -66}
+        - {x: 164, y: -23}
+        - {x: 117, y: 21}
+        - {x: 63, y: 61}
+        - {x: 30, y: 77}
+        - {x: -9, y: 77}
+        - {x: -40, y: 64}
+        - {x: -144, y: -15}
+        - {x: -216, y: -79}
+        - {x: -269, y: -86}
+        - {x: -284, y: -93}
+        - {x: -284, y: -102}
+        - {x: -282, y: -106}
+        - {x: -208, y: -112}
+        - {x: -156, y: -128}
+        - {x: -115, y: -128}
+        - {x: -95, y: -127}
+        - {x: -32, y: -116}
+        - {x: 65, y: -112}
+        - {x: 123, y: -118}
+    - name: happylava_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1575
+        width: 600
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 153, y: -117}
+        - {x: 268, y: -100}
+        - {x: 285, y: -95}
+        - {x: 285, y: -82}
+        - {x: 281, y: -75}
+        - {x: 241, y: -66}
+        - {x: 164, y: -23}
+        - {x: 117, y: 21}
+        - {x: 63, y: 61}
+        - {x: 30, y: 77}
+        - {x: -9, y: 77}
+        - {x: -40, y: 64}
+        - {x: -144, y: -15}
+        - {x: -216, y: -79}
+        - {x: -269, y: -86}
+        - {x: -284, y: -93}
+        - {x: -284, y: -102}
+        - {x: -282, y: -106}
+        - {x: -208, y: -112}
+        - {x: -156, y: -128}
+        - {x: -115, y: -128}
+        - {x: -95, y: -127}
+        - {x: -32, y: -116}
+        - {x: 65, y: -112}
+        - {x: 123, y: -118}
+    - name: happylava_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1575
+        width: 600
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 153, y: -117}
+        - {x: 268, y: -100}
+        - {x: 285, y: -95}
+        - {x: 285, y: -82}
+        - {x: 281, y: -75}
+        - {x: 241, y: -66}
+        - {x: 164, y: -23}
+        - {x: 117, y: 21}
+        - {x: 63, y: 61}
+        - {x: 30, y: 77}
+        - {x: -9, y: 77}
+        - {x: -40, y: 64}
+        - {x: -144, y: -15}
+        - {x: -216, y: -79}
+        - {x: -269, y: -86}
+        - {x: -284, y: -93}
+        - {x: -284, y: -102}
+        - {x: -282, y: -106}
+        - {x: -208, y: -112}
+        - {x: -156, y: -128}
+        - {x: -115, y: -128}
+        - {x: -95, y: -127}
+        - {x: -32, y: -116}
+        - {x: 65, y: -112}
+        - {x: 123, y: -118}
+    - name: happylava_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1275
+        width: 600
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 153, y: -117}
+        - {x: 268, y: -100}
+        - {x: 285, y: -95}
+        - {x: 285, y: -82}
+        - {x: 281, y: -75}
+        - {x: 241, y: -66}
+        - {x: 164, y: -23}
+        - {x: 117, y: 21}
+        - {x: 63, y: 61}
+        - {x: 30, y: 77}
+        - {x: -9, y: 77}
+        - {x: -40, y: 64}
+        - {x: -144, y: -15}
+        - {x: -216, y: -79}
+        - {x: -269, y: -86}
+        - {x: -284, y: -93}
+        - {x: -284, y: -102}
+        - {x: -282, y: -106}
+        - {x: -208, y: -112}
+        - {x: -156, y: -128}
+        - {x: -115, y: -128}
+        - {x: -95, y: -127}
+        - {x: -32, y: -116}
+        - {x: 65, y: -112}
+        - {x: 123, y: -118}
+    - name: happylava_4
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1275
+        width: 600
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 153, y: -117}
+        - {x: 268, y: -100}
+        - {x: 285, y: -95}
+        - {x: 285, y: -82}
+        - {x: 281, y: -75}
+        - {x: 241, y: -66}
+        - {x: 164, y: -23}
+        - {x: 117, y: 21}
+        - {x: 63, y: 61}
+        - {x: 30, y: 77}
+        - {x: -9, y: 77}
+        - {x: -40, y: 64}
+        - {x: -144, y: -15}
+        - {x: -216, y: -79}
+        - {x: -269, y: -86}
+        - {x: -284, y: -93}
+        - {x: -284, y: -102}
+        - {x: -282, y: -106}
+        - {x: -208, y: -112}
+        - {x: -156, y: -128}
+        - {x: -115, y: -128}
+        - {x: -95, y: -127}
+        - {x: -32, y: -116}
+        - {x: 65, y: -112}
+        - {x: 123, y: -118}
+    - name: happylava_5
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1275
+        width: 600
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 153, y: -117}
+        - {x: 268, y: -100}
+        - {x: 285, y: -95}
+        - {x: 285, y: -82}
+        - {x: 281, y: -75}
+        - {x: 241, y: -66}
+        - {x: 164, y: -23}
+        - {x: 117, y: 21}
+        - {x: 63, y: 61}
+        - {x: 30, y: 77}
+        - {x: -9, y: 77}
+        - {x: -40, y: 64}
+        - {x: -144, y: -15}
+        - {x: -216, y: -79}
+        - {x: -269, y: -86}
+        - {x: -284, y: -93}
+        - {x: -284, y: -102}
+        - {x: -282, y: -106}
+        - {x: -208, y: -112}
+        - {x: -156, y: -128}
+        - {x: -115, y: -128}
+        - {x: -95, y: -127}
+        - {x: -32, y: -116}
+        - {x: 65, y: -112}
+        - {x: 123, y: -118}
+    - name: happylava_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 975
+        width: 600
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 153, y: -117}
+        - {x: 268, y: -100}
+        - {x: 285, y: -95}
+        - {x: 285, y: -82}
+        - {x: 281, y: -75}
+        - {x: 241, y: -66}
+        - {x: 164, y: -23}
+        - {x: 117, y: 21}
+        - {x: 63, y: 61}
+        - {x: 30, y: 77}
+        - {x: -9, y: 77}
+        - {x: -40, y: 64}
+        - {x: -144, y: -15}
+        - {x: -216, y: -79}
+        - {x: -269, y: -86}
+        - {x: -284, y: -93}
+        - {x: -284, y: -102}
+        - {x: -282, y: -106}
+        - {x: -208, y: -112}
+        - {x: -156, y: -128}
+        - {x: -115, y: -128}
+        - {x: -95, y: -127}
+        - {x: -32, y: -116}
+        - {x: 65, y: -112}
+        - {x: 123, y: -118}
+    - name: happylava_7
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 975
+        width: 600
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 153, y: -117}
+        - {x: 268, y: -100}
+        - {x: 285, y: -95}
+        - {x: 285, y: -82}
+        - {x: 281, y: -75}
+        - {x: 241, y: -66}
+        - {x: 164, y: -23}
+        - {x: 117, y: 21}
+        - {x: 63, y: 61}
+        - {x: 30, y: 77}
+        - {x: -9, y: 77}
+        - {x: -40, y: 64}
+        - {x: -144, y: -15}
+        - {x: -216, y: -79}
+        - {x: -269, y: -86}
+        - {x: -284, y: -93}
+        - {x: -284, y: -102}
+        - {x: -282, y: -106}
+        - {x: -208, y: -112}
+        - {x: -156, y: -128}
+        - {x: -115, y: -128}
+        - {x: -95, y: -127}
+        - {x: -32, y: -116}
+        - {x: 65, y: -112}
+        - {x: 123, y: -118}
+    - name: happylava_8
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 975
+        width: 600
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 153, y: -117}
+        - {x: 268, y: -100}
+        - {x: 285, y: -95}
+        - {x: 285, y: -82}
+        - {x: 281, y: -75}
+        - {x: 241, y: -66}
+        - {x: 164, y: -23}
+        - {x: 117, y: 21}
+        - {x: 63, y: 61}
+        - {x: 30, y: 77}
+        - {x: -9, y: 77}
+        - {x: -40, y: 64}
+        - {x: -144, y: -15}
+        - {x: -216, y: -79}
+        - {x: -269, y: -86}
+        - {x: -284, y: -93}
+        - {x: -284, y: -102}
+        - {x: -282, y: -106}
+        - {x: -208, y: -112}
+        - {x: -156, y: -128}
+        - {x: -115, y: -128}
+        - {x: -95, y: -127}
+        - {x: -32, y: -116}
+        - {x: 65, y: -112}
+        - {x: 123, y: -118}
+    - name: happylava_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 675
+        width: 600
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 153, y: -117}
+        - {x: 268, y: -100}
+        - {x: 285, y: -95}
+        - {x: 285, y: -82}
+        - {x: 281, y: -75}
+        - {x: 241, y: -66}
+        - {x: 164, y: -23}
+        - {x: 117, y: 21}
+        - {x: 63, y: 61}
+        - {x: 30, y: 77}
+        - {x: -9, y: 77}
+        - {x: -40, y: 64}
+        - {x: -144, y: -15}
+        - {x: -216, y: -79}
+        - {x: -269, y: -86}
+        - {x: -284, y: -93}
+        - {x: -284, y: -102}
+        - {x: -282, y: -106}
+        - {x: -208, y: -112}
+        - {x: -156, y: -128}
+        - {x: -115, y: -128}
+        - {x: -95, y: -127}
+        - {x: -32, y: -116}
+        - {x: 65, y: -112}
+        - {x: 123, y: -118}
+    - name: happylava_10
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 675
+        width: 600
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 153, y: -117}
+        - {x: 268, y: -100}
+        - {x: 285, y: -95}
+        - {x: 285, y: -82}
+        - {x: 281, y: -75}
+        - {x: 241, y: -66}
+        - {x: 164, y: -23}
+        - {x: 117, y: 21}
+        - {x: 63, y: 61}
+        - {x: 30, y: 77}
+        - {x: -9, y: 77}
+        - {x: -40, y: 64}
+        - {x: -144, y: -15}
+        - {x: -216, y: -79}
+        - {x: -269, y: -86}
+        - {x: -284, y: -93}
+        - {x: -284, y: -102}
+        - {x: -282, y: -106}
+        - {x: -208, y: -112}
+        - {x: -156, y: -128}
+        - {x: -115, y: -128}
+        - {x: -95, y: -127}
+        - {x: -32, y: -116}
+        - {x: 65, y: -112}
+        - {x: 123, y: -118}
+    - name: happylava_11
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 675
+        width: 600
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 153, y: -117}
+        - {x: 268, y: -100}
+        - {x: 285, y: -95}
+        - {x: 285, y: -82}
+        - {x: 281, y: -75}
+        - {x: 241, y: -66}
+        - {x: 164, y: -23}
+        - {x: 117, y: 21}
+        - {x: 63, y: 61}
+        - {x: 30, y: 77}
+        - {x: -9, y: 77}
+        - {x: -40, y: 64}
+        - {x: -144, y: -15}
+        - {x: -216, y: -79}
+        - {x: -269, y: -86}
+        - {x: -284, y: -93}
+        - {x: -284, y: -102}
+        - {x: -282, y: -106}
+        - {x: -208, y: -112}
+        - {x: -156, y: -128}
+        - {x: -115, y: -128}
+        - {x: -95, y: -127}
+        - {x: -32, y: -116}
+        - {x: 65, y: -112}
+        - {x: 123, y: -118}
+    - name: happylava_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 375
+        width: 600
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 153, y: -117}
+        - {x: 268, y: -100}
+        - {x: 285, y: -95}
+        - {x: 285, y: -82}
+        - {x: 281, y: -75}
+        - {x: 241, y: -66}
+        - {x: 164, y: -23}
+        - {x: 117, y: 21}
+        - {x: 63, y: 61}
+        - {x: 30, y: 77}
+        - {x: -9, y: 77}
+        - {x: -40, y: 64}
+        - {x: -144, y: -15}
+        - {x: -216, y: -79}
+        - {x: -269, y: -86}
+        - {x: -284, y: -93}
+        - {x: -284, y: -102}
+        - {x: -282, y: -106}
+        - {x: -208, y: -112}
+        - {x: -156, y: -128}
+        - {x: -115, y: -128}
+        - {x: -95, y: -127}
+        - {x: -32, y: -116}
+        - {x: 65, y: -112}
+        - {x: 123, y: -118}
+    - name: happylava_13
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 375
+        width: 600
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 153, y: -117}
+        - {x: 268, y: -100}
+        - {x: 285, y: -95}
+        - {x: 285, y: -82}
+        - {x: 281, y: -75}
+        - {x: 241, y: -66}
+        - {x: 164, y: -23}
+        - {x: 117, y: 21}
+        - {x: 63, y: 61}
+        - {x: 30, y: 77}
+        - {x: -9, y: 77}
+        - {x: -40, y: 64}
+        - {x: -144, y: -15}
+        - {x: -216, y: -79}
+        - {x: -269, y: -86}
+        - {x: -284, y: -93}
+        - {x: -284, y: -102}
+        - {x: -282, y: -106}
+        - {x: -208, y: -112}
+        - {x: -156, y: -128}
+        - {x: -115, y: -128}
+        - {x: -95, y: -127}
+        - {x: -32, y: -116}
+        - {x: 65, y: -112}
+        - {x: 123, y: -118}
+    - name: happylava_14
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 375
+        width: 600
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 153, y: -117}
+        - {x: 268, y: -100}
+        - {x: 285, y: -95}
+        - {x: 285, y: -82}
+        - {x: 281, y: -75}
+        - {x: 241, y: -66}
+        - {x: 164, y: -23}
+        - {x: 117, y: 21}
+        - {x: 63, y: 61}
+        - {x: 30, y: 77}
+        - {x: -9, y: 77}
+        - {x: -40, y: 64}
+        - {x: -144, y: -15}
+        - {x: -216, y: -79}
+        - {x: -269, y: -86}
+        - {x: -284, y: -93}
+        - {x: -284, y: -102}
+        - {x: -282, y: -106}
+        - {x: -208, y: -112}
+        - {x: -156, y: -128}
+        - {x: -115, y: -128}
+        - {x: -95, y: -127}
+        - {x: -32, y: -116}
+        - {x: 65, y: -112}
+        - {x: 123, y: -118}
+    - name: happylava_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 75
+        width: 600
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 153, y: -117}
+        - {x: 268, y: -100}
+        - {x: 285, y: -95}
+        - {x: 285, y: -82}
+        - {x: 281, y: -75}
+        - {x: 241, y: -66}
+        - {x: 164, y: -23}
+        - {x: 117, y: 21}
+        - {x: 63, y: 61}
+        - {x: 30, y: 77}
+        - {x: -9, y: 77}
+        - {x: -40, y: 64}
+        - {x: -144, y: -15}
+        - {x: -216, y: -79}
+        - {x: -269, y: -86}
+        - {x: -284, y: -93}
+        - {x: -284, y: -102}
+        - {x: -282, y: -106}
+        - {x: -208, y: -112}
+        - {x: -156, y: -128}
+        - {x: -115, y: -128}
+        - {x: -95, y: -127}
+        - {x: -32, y: -116}
+        - {x: 65, y: -112}
+        - {x: 123, y: -118}
+    - name: happylava_16
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 75
+        width: 600
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 153, y: -117}
+        - {x: 268, y: -100}
+        - {x: 285, y: -95}
+        - {x: 285, y: -82}
+        - {x: 281, y: -75}
+        - {x: 241, y: -66}
+        - {x: 164, y: -23}
+        - {x: 117, y: 21}
+        - {x: 63, y: 61}
+        - {x: 30, y: 77}
+        - {x: -9, y: 77}
+        - {x: -40, y: 64}
+        - {x: -144, y: -15}
+        - {x: -216, y: -79}
+        - {x: -269, y: -86}
+        - {x: -284, y: -93}
+        - {x: -284, y: -102}
+        - {x: -282, y: -106}
+        - {x: -208, y: -112}
+        - {x: -156, y: -128}
+        - {x: -115, y: -128}
+        - {x: -95, y: -127}
+        - {x: -32, y: -116}
+        - {x: 65, y: -112}
+        - {x: 123, y: -118}
+    - name: happylava_17
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 75
+        width: 600
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 153, y: -117}
+        - {x: 268, y: -100}
+        - {x: 285, y: -95}
+        - {x: 285, y: -82}
+        - {x: 281, y: -75}
+        - {x: 241, y: -66}
+        - {x: 164, y: -23}
+        - {x: 117, y: 21}
+        - {x: 63, y: 61}
+        - {x: 30, y: 77}
+        - {x: -9, y: 77}
+        - {x: -40, y: 64}
+        - {x: -144, y: -15}
+        - {x: -216, y: -79}
+        - {x: -269, y: -86}
+        - {x: -284, y: -93}
+        - {x: -284, y: -102}
+        - {x: -282, y: -106}
+        - {x: -208, y: -112}
+        - {x: -156, y: -128}
+        - {x: -115, y: -128}
+        - {x: -95, y: -127}
+        - {x: -32, y: -116}
+        - {x: 65, y: -112}
+        - {x: 123, y: -118}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

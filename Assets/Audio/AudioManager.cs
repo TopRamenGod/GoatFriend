@@ -33,6 +33,8 @@ public class AudioManager : MonoBehaviour {
 
     public AudioClip burnt;
 
+    public AudioClip collect;
+
 
 	void Awake () {
 		if (instance == null) {
@@ -101,6 +103,10 @@ public class AudioManager : MonoBehaviour {
 
     public void playBurnt(){
         PlaySingleEffect(burnt);
+    }
+
+    public void playCollect(){
+        PlaySingleEffect(collect);
     }
 
 
