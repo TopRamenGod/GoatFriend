@@ -67,6 +67,8 @@ public class LevelManager : MonoBehaviour {
 
         goat.isTimeSlow = true;
 
+        AudioManager.instance.playPortalOpen();
+
         UnityTimer.Instance.CallAfterDelay(() => {
             goat.isTimeSlow = false;
         } , 1.5f);

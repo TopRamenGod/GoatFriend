@@ -35,6 +35,8 @@ public class AudioManager : MonoBehaviour {
 
     public AudioClip collect;
 
+    public AudioClip portalOpen;
+
 
 	void Awake () {
 		if (instance == null) {
@@ -107,6 +109,11 @@ public class AudioManager : MonoBehaviour {
 
     public void playCollect(){
         PlaySingleEffect(collect);
+    }
+
+
+    public void playPortalOpen(){
+        PlaySingleEffect(portalOpen);
     }
 
 
