@@ -57,32 +57,40 @@ public class GoatManager : TouchableBehaviour {
     }
 
     public override void OnTouchStart(Vector3 position)
+ 
     {
-        gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
 
-        AudioManager.instance.playSheep();
+        if(State != GoatState.Falling){
+            gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
+
+            AudioManager.instance.playSheep();
+        }
     }
 
     public override void OnTouchHeld(Vector3 position)
     {
+        if(State != GoatState.Falling){
+            float maxDist = 1.8f;
+            Vector3 toFinger = (position - basePlatform.position);
 
-        float maxDist = 1.8f;
-        Vector3 toFinger = (position - basePlatform.position);
+            if ( toFinger.magnitude > maxDist){
+                toFinger.Normalize();
+                toFinger*=maxDist;
+            }
 
-        if ( toFinger.magnitude > maxDist){
-            toFinger.Normalize();
-            toFinger*=maxDist;
+            Vector4 finalPos = basePlatform.position + toFinger;
+           
+                gameObject.transform.position = finalPos;
         }
-
-        Vector4 finalPos = basePlatform.position + toFinger;
-       
-            gameObject.transform.position = finalPos;
       
     }
 
     public override void OnTouchEnd(Vector3 position)
+
     {
-        gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
+        if(State != GoatState.Falling){
+            gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
+        }
     }
 
 
