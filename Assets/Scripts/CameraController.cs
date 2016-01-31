@@ -26,10 +26,10 @@ public class CameraController : MonoBehaviour {
         }
 
 
-        if( goat.State == GoatState.Falling){
+        if( goat.State == GoatState.Falling || goat.State == GoatState.Saved){
 
          
-            Vector3 dest = new Vector3(transform.position.x, goat.transform.position.y, transform.position.z);
+            Vector3 dest = new Vector3(transform.position.x, goat.transform.position.y, transform.position.z) + Vector3.down * 3;
 
             float distToGoat = Vector3.Distance(dest, transform.position);
             transform.position = Vector3.MoveTowards(transform.position, dest, CameraMoveSpeed * Time.deltaTime *distToGoat);

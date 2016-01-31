@@ -9,27 +9,31 @@ public class LavaFountain : MonoBehaviour {
     private bool isOn;
 
     public float interval;
+    public float offset;
+    public float partLength = 0.61f;
 
 
     void Start(){
-        isOn = true;
+        isOn = false;
         StartCoroutine(flippingCoRoutine());
+        pSystem.startLifetime = 0.1f;
+        col.enabled = false;
     }
 
     IEnumerator flippingCoRoutine(){
-
+        yield return new WaitForSeconds(offset);
         while(true){
-            yield return new WaitForSeconds(interval);
+            
             if(isOn){
                 isOn = false;
                 pSystem.startLifetime = 0.1f;
                 col.enabled = false;
             }else{
-                pSystem.startLifetime = 0.61f;
+                pSystem.startLifetime = partLength;
                 col.enabled = true;
                 isOn=true;
             }
-
+            yield return new WaitForSeconds(interval);
 
         }
     }
