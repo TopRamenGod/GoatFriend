@@ -1,0 +1,728 @@
+fileFormatVersion: 2
+guid: d06ccffec4282c54ebf806b257613052
+timeCreated: 1454254228
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: NewBottomLava_0
+    21300002: NewBottomLava_1
+    21300004: NewBottomLava_2
+    21300006: NewBottomLava_3
+    21300008: NewBottomLava_4
+    21300010: NewBottomLava_5
+    21300012: NewBottomLava_6
+    21300014: NewBottomLava_7
+    21300016: NewBottomLava_8
+    21300018: NewBottomLava_9
+    21300020: NewBottomLava_10
+    21300022: NewBottomLava_11
+    21300024: NewBottomLava_12
+    21300026: NewBottomLava_13
+    21300028: NewBottomLava_14
+    21300030: NewBottomLava_15
+    21300032: NewBottomLava_16
+    21300034: NewBottomLava_17
+    21300036: NewBottomLava_18
+    21300038: NewBottomLava_19
+    21300040: NewBottomLava_20
+    21300042: NewBottomLava_21
+    21300044: NewBottomLava_22
+    21300046: NewBottomLava_23
+    21300048: NewBottomLava_24
+    21300050: NewBottomLava_25
+    21300052: NewBottomLava_26
+    21300054: NewBottomLava_27
+    21300056: NewBottomLava_28
+    21300058: NewBottomLava_29
+    21300060: NewBottomLava_30
+    21300062: NewBottomLava_31
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: NewBottomLava_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1649
+        width: 583
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -81.223206, y: 42.073853}
+        - {x: -94.223206, y: 41.073853}
+        - {x: -122.223206, y: 42.073853}
+        - {x: -129.2232, y: 42.073853}
+        - {x: -141.2232, y: 38.073853}
+        - {x: -159.2232, y: 26.073853}
+        - {x: -159.2232, y: -39.926147}
+        - {x: -158.2232, y: -40.926147}
+        - {x: 159.7768, y: -40.926147}
+        - {x: 159.7768, y: 35.073853}
+        - {x: 136.7768, y: 42.073853}
+    - name: NewBottomLava_1
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 1649
+        width: 582
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.904785, y: 42.073853}
+        - {x: -82.904785, y: 39.073853}
+        - {x: -112.904785, y: 42.073853}
+        - {x: -132.90479, y: 42.073853}
+        - {x: -158.90479, y: 30.073853}
+        - {x: -158.90479, y: -40.926147}
+        - {x: 160.09521, y: -40.926147}
+        - {x: 160.09521, y: 36.073853}
+        - {x: 123.095215, y: 42.073853}
+    - name: NewBottomLava_2
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 1649
+        width: 583
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 111.86749, y: 42.073853}
+        - {x: 53.867493, y: 42.073853}
+        - {x: -13.132507, y: 31.073853}
+        - {x: -94.13251, y: 42.073853}
+        - {x: -133.1325, y: 42.073853}
+        - {x: -159.1325, y: 28.073853}
+        - {x: -159.1325, y: -40.926147}
+        - {x: 158.8675, y: -40.926147}
+        - {x: 159.8675, y: -31.926147}
+        - {x: 159.8675, y: 31.073853}
+        - {x: 152.8675, y: 35.073853}
+    - name: NewBottomLava_3
+      rect:
+        serializedVersion: 2
+        x: 1812
+        y: 1649
+        width: 584
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 119.59363, y: 42.073853}
+        - {x: 33.593628, y: 42.073853}
+        - {x: -31.406372, y: 29.073853}
+        - {x: -87.40637, y: 42.073853}
+        - {x: -143.40637, y: 42.073853}
+        - {x: -159.40637, y: 29.073853}
+        - {x: -159.40637, y: -40.926147}
+        - {x: 159.59363, y: -40.926147}
+        - {x: 160.59363, y: -35.926147}
+        - {x: 160.59363, y: 30.073853}
+        - {x: 154.59363, y: 38.073853}
+    - name: NewBottomLava_4
+      rect:
+        serializedVersion: 2
+        x: 2414
+        y: 1649
+        width: 583
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 159.86584, y: 34.573853}
+        - {x: 138.86584, y: 40.573853}
+        - {x: -135.13416, y: 40.573853}
+        - {x: -159.13416, y: 28.573853}
+        - {x: -159.13416, y: -39.426147}
+        - {x: 157.86584, y: -39.426147}
+        - {x: 158.86584, y: -38.426147}
+        - {x: 159.86584, y: -27.426147}
+    - name: NewBottomLava_5
+      rect:
+        serializedVersion: 2
+        x: 3015
+        y: 1649
+        width: 582
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -116.90796, y: 40.573853}
+        - {x: -150.90796, y: 34.573853}
+        - {x: -158.90796, y: 22.573853}
+        - {x: -158.90796, y: -39.426147}
+        - {x: 160.09204, y: -39.426147}
+        - {x: 160.09204, y: 31.573853}
+        - {x: 152.09204, y: 40.573853}
+    - name: NewBottomLava_6
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1349
+        width: 581
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 142.36906, y: 40.733887}
+        - {x: 21.369064, y: 40.733887}
+        - {x: -22.630936, y: 36.733887}
+        - {x: -139.63094, y: 40.733887}
+        - {x: -158.63094, y: 25.733887}
+        - {x: -158.63094, y: -39.266113}
+        - {x: 159.36906, y: -39.266113}
+        - {x: 159.36906, y: 31.733887}
+        - {x: 150.36906, y: 39.733887}
+    - name: NewBottomLava_7
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 1349
+        width: 582
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 38.095215, y: 40.733887}
+        - {x: -4.904785, y: 38.733887}
+        - {x: -139.90479, y: 40.733887}
+        - {x: -158.90479, y: 24.733887}
+        - {x: -158.90479, y: -39.266113}
+        - {x: 160.09521, y: -39.266113}
+        - {x: 160.09521, y: 37.733887}
+        - {x: 144.09521, y: 40.733887}
+    - name: NewBottomLava_8
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 1350
+        width: 583
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 48.775208, y: 41.28003}
+        - {x: -18.224792, y: 35.28003}
+        - {x: -99.22479, y: 41.28003}
+        - {x: -115.22479, y: 41.28003}
+        - {x: -159.2248, y: 26.28003}
+        - {x: -159.2248, y: -40.71997}
+        - {x: 159.7752, y: -40.71997}
+        - {x: 159.7752, y: 39.28003}
+        - {x: 146.7752, y: 41.28003}
+    - name: NewBottomLava_9
+      rect:
+        serializedVersion: 2
+        x: 1812
+        y: 1350
+        width: 582
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -74.90637, y: 41.28003}
+        - {x: -149.90637, y: 34.28003}
+        - {x: -158.90637, y: 22.28003}
+        - {x: -158.90637, y: -40.71997}
+        - {x: 160.09363, y: -40.71997}
+        - {x: 160.09363, y: 31.28003}
+        - {x: 143.09363, y: 41.28003}
+    - name: NewBottomLava_10
+      rect:
+        serializedVersion: 2
+        x: 2414
+        y: 1350
+        width: 583
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 144.86584, y: 41.28003}
+        - {x: 53.865845, y: 41.28003}
+        - {x: -121.134155, y: 39.28003}
+        - {x: -159.13416, y: 27.28003}
+        - {x: -159.13416, y: -40.71997}
+        - {x: 157.86584, y: -40.71997}
+        - {x: 158.86584, y: -39.71997}
+        - {x: 159.86584, y: -30.71997}
+        - {x: 159.86584, y: 32.28003}
+    - name: NewBottomLava_11
+      rect:
+        serializedVersion: 2
+        x: 3015
+        y: 1349
+        width: 584
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 129.59204, y: 42.233887}
+        - {x: 71.59204, y: 42.233887}
+        - {x: -5.407959, y: 37.233887}
+        - {x: -116.40796, y: 38.233887}
+        - {x: -159.40796, y: 36.233887}
+        - {x: -159.40796, y: -40.766113}
+        - {x: 160.59204, y: -40.766113}
+        - {x: 160.59204, y: 32.233887}
+        - {x: 150.59204, y: 38.233887}
+    - name: NewBottomLava_12
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1048
+        width: 583
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44.130936, y: 41.847717}
+        - {x: -127.130936, y: 34.847717}
+        - {x: -151.13094, y: 27.847717}
+        - {x: -159.13094, y: 18.847717}
+        - {x: -159.13094, y: -41.152283}
+        - {x: 159.86906, y: -41.152283}
+        - {x: 159.86906, y: 41.847717}
+    - name: NewBottomLava_13
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 1048
+        width: 584
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 143.68747, y: 41.847717}
+        - {x: -94.31253, y: 41.847717}
+        - {x: -159.31253, y: 24.847717}
+        - {x: -159.31253, y: -41.152283}
+        - {x: 160.68747, y: -41.152283}
+        - {x: 160.68747, y: 28.847717}
+        - {x: 153.68747, y: 36.847717}
+    - name: NewBottomLava_14
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 1050
+        width: 584
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 148.45972, y: 39.940002}
+        - {x: 131.45972, y: 41.940002}
+        - {x: -85.54028, y: 41.940002}
+        - {x: -153.54028, y: 27.940002}
+        - {x: -159.54028, y: 18.940002}
+        - {x: -159.54028, y: -41.059998}
+        - {x: 159.45972, y: -41.059998}
+        - {x: 160.45972, y: -15.059998}
+        - {x: 160.45972, y: 29.940002}
+    - name: NewBottomLava_15
+      rect:
+        serializedVersion: 2
+        x: 1817
+        y: 1048
+        width: 583
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 38.82428, y: 41.847717}
+        - {x: -37.17572, y: 39.847717}
+        - {x: -93.17572, y: 38.847717}
+        - {x: -146.17572, y: 31.847717}
+        - {x: -159.17572, y: 20.847717}
+        - {x: -159.17572, y: -41.152283}
+        - {x: 159.82428, y: -41.152283}
+        - {x: 159.82428, y: 41.847717}
+    - name: NewBottomLava_16
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 1050
+        width: 584
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -93.3573, y: 42.940002}
+        - {x: -159.3573, y: 22.940002}
+        - {x: -159.3573, y: -42.059998}
+        - {x: 158.6427, y: -42.059998}
+        - {x: 160.6427, y: -32.059998}
+        - {x: 160.6427, y: 31.940002}
+        - {x: 141.6427, y: 42.940002}
+    - name: NewBottomLava_17
+      rect:
+        serializedVersion: 2
+        x: 3024
+        y: 1050
+        width: 584
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 145.5072, y: 42.940002}
+        - {x: 82.5072, y: 42.940002}
+        - {x: 35.507202, y: 37.940002}
+        - {x: -13.492798, y: 42.940002}
+        - {x: -69.4928, y: 42.940002}
+        - {x: -159.4928, y: 23.940002}
+        - {x: -159.4928, y: -42.059998}
+        - {x: 158.5072, y: -42.059998}
+        - {x: 158.5072, y: -41.059998}
+        - {x: 160.5072, y: -26.059998}
+        - {x: 160.5072, y: 33.940002}
+    - name: NewBottomLava_18
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 748
+        width: 584
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 154.36906, y: 43.00775}
+        - {x: -71.630936, y: 43.00775}
+        - {x: -154.63094, y: 29.007751}
+        - {x: -159.63094, y: 20.007751}
+        - {x: -159.63094, y: -41.99225}
+        - {x: 157.36906, y: -41.99225}
+        - {x: 158.36906, y: -40.99225}
+        - {x: 160.36906, y: -23.992249}
+        - {x: 160.36906, y: 33.00775}
+    - name: NewBottomLava_19
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 748
+        width: 584
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.76639, y: 43.00775}
+        - {x: -152.76639, y: 26.007751}
+        - {x: -159.76639, y: 19.007751}
+        - {x: -159.76639, y: -41.99225}
+        - {x: 158.23361, y: -41.99225}
+        - {x: 160.23361, y: -37.99225}
+        - {x: 160.23361, y: 38.00775}
+        - {x: 159.23361, y: 43.00775}
+    - name: NewBottomLava_20
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 748
+        width: 584
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25.552002, y: 43.00775}
+        - {x: -82.448, y: 41.00775}
+        - {x: -150.448, y: 29.007751}
+        - {x: -159.448, y: 20.007751}
+        - {x: -159.448, y: -41.99225}
+        - {x: 160.552, y: -41.99225}
+        - {x: 160.552, y: 31.007751}
+        - {x: 144.552, y: 43.00775}
+    - name: NewBottomLava_21
+      rect:
+        serializedVersion: 2
+        x: 1819
+        y: 748
+        width: 584
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 149.41656, y: 43.00775}
+        - {x: 6.416565, y: 43.00775}
+        - {x: -42.583435, y: 38.00775}
+        - {x: -84.583435, y: 41.00775}
+        - {x: -155.58344, y: 29.007751}
+        - {x: -159.58344, y: 24.007751}
+        - {x: -159.58344, y: -41.99225}
+        - {x: 158.41656, y: -41.99225}
+        - {x: 160.41656, y: -22.992249}
+        - {x: 160.41656, y: 36.00775}
+        - {x: 156.41656, y: 42.00775}
+    - name: NewBottomLava_22
+      rect:
+        serializedVersion: 2
+        x: 2422
+        y: 750
+        width: 584
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 146.73499, y: 42.600006}
+        - {x: 42.734985, y: 42.600006}
+        - {x: 13.734985, y: 40.600006}
+        - {x: -54.265015, y: 40.600006}
+        - {x: -136.26501, y: 36.600006}
+        - {x: -159.26501, y: 22.600006}
+        - {x: -159.26501, y: -41.399994}
+        - {x: 158.73499, y: -41.399994}
+        - {x: 158.73499, y: -40.399994}
+        - {x: 160.73499, y: -18.399994}
+        - {x: 160.73499, y: 32.600006}
+    - name: NewBottomLava_23
+      rect:
+        serializedVersion: 2
+        x: 3024
+        y: 750
+        width: 584
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 141.5072, y: 42.600006}
+        - {x: 78.5072, y: 42.600006}
+        - {x: 14.507202, y: 38.600006}
+        - {x: -75.4928, y: 41.600006}
+        - {x: -157.4928, y: 29.600006}
+        - {x: -159.4928, y: 20.600006}
+        - {x: -159.4928, y: -41.399994}
+        - {x: 160.5072, y: -41.399994}
+        - {x: 160.5072, y: 31.600006}
+        - {x: 155.5072, y: 37.600006}
+    - name: NewBottomLava_24
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 450
+        width: 581
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 125.369064, y: 43.26001}
+        - {x: 62.369064, y: 43.26001}
+        - {x: 6.3690643, y: 38.26001}
+        - {x: -122.630936, y: 36.26001}
+        - {x: -158.63094, y: 31.26001}
+        - {x: -158.63094, y: -41.73999}
+        - {x: 159.36906, y: -41.73999}
+        - {x: 159.36906, y: 37.26001}
+        - {x: 143.36906, y: 42.26001}
+    - name: NewBottomLava_25
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 450
+        width: 582
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 135.09521, y: 43.26001}
+        - {x: 56.095215, y: 43.26001}
+        - {x: 5.095215, y: 40.26001}
+        - {x: -121.904785, y: 37.26001}
+        - {x: -148.90479, y: 32.26001}
+        - {x: -158.90479, y: 21.26001}
+        - {x: -158.90479, y: -41.73999}
+        - {x: 160.09521, y: -41.73999}
+        - {x: 160.09521, y: 32.26001}
+        - {x: 148.09521, y: 41.26001}
+    - name: NewBottomLava_26
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 450
+        width: 583
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35.224792, y: 43.26001}
+        - {x: -66.22479, y: 40.26001}
+        - {x: -147.2248, y: 34.26001}
+        - {x: -159.2248, y: 21.26001}
+        - {x: -159.2248, y: -41.73999}
+        - {x: 158.7752, y: -41.73999}
+        - {x: 159.7752, y: -36.73999}
+        - {x: 159.7752, y: 41.26001}
+        - {x: 146.7752, y: 43.26001}
+    - name: NewBottomLava_27
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 450
+        width: 582
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 129.00134, y: 42.76001}
+        - {x: 31.001343, y: 42.76001}
+        - {x: 11.001343, y: 41.76001}
+        - {x: -125.99866, y: 39.76001}
+        - {x: -158.99866, y: 24.76001}
+        - {x: -158.99866, y: -41.23999}
+        - {x: 159.00134, y: -41.23999}
+        - {x: 160.00134, y: -31.23999}
+        - {x: 160.00134, y: 35.76001}
+        - {x: 146.00134, y: 40.76001}
+    - name: NewBottomLava_28
+      rect:
+        serializedVersion: 2
+        x: 2412
+        y: 450
+        width: 583
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 121.77356, y: 42.76001}
+        - {x: 56.77356, y: 42.76001}
+        - {x: 33.77356, y: 40.76001}
+        - {x: -94.22644, y: 41.76001}
+        - {x: -154.22644, y: 34.76001}
+        - {x: -159.22644, y: 25.76001}
+        - {x: -159.22644, y: -41.23999}
+        - {x: 158.77356, y: -41.23999}
+        - {x: 159.77356, y: -28.23999}
+        - {x: 159.77356, y: 33.76001}
+        - {x: 157.77356, y: 35.76001}
+    - name: NewBottomLava_29
+      rect:
+        serializedVersion: 2
+        x: 3015
+        y: 450
+        width: 584
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -133.40796, y: 42.76001}
+        - {x: -159.40796, y: 25.76001}
+        - {x: -159.40796, y: -41.23999}
+        - {x: 158.59204, y: -41.23999}
+        - {x: 160.59204, y: -30.23999}
+        - {x: 160.59204, y: 42.76001}
+    - name: NewBottomLava_30
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 149
+        width: 583
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 126.869064, y: 42.37387}
+        - {x: 68.869064, y: 42.37387}
+        - {x: 25.869064, y: 39.37387}
+        - {x: -124.130936, y: 39.37387}
+        - {x: -143.13094, y: 35.37387}
+        - {x: -159.13094, y: 22.37387}
+        - {x: -159.13094, y: -41.62613}
+        - {x: 158.86906, y: -41.62613}
+        - {x: 159.86906, y: -24.62613}
+        - {x: 159.86906, y: 31.37387}
+        - {x: 144.86906, y: 40.37387}
+    - name: NewBottomLava_31
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 149
+        width: 584
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -109.31253, y: 42.37387}
+        - {x: -154.31253, y: 33.37387}
+        - {x: -159.31253, y: 20.37387}
+        - {x: -159.31253, y: -41.62613}
+        - {x: 160.68747, y: -41.62613}
+        - {x: 160.68747, y: 39.37387}
+        - {x: 125.68747, y: 42.37387}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

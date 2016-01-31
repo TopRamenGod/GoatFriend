@@ -21,6 +21,7 @@ public class LevelManager : MonoBehaviour {
     public Animator darkScreen;
     public GameObject dieScreen;
     public GameObject winScreen;
+    public GameObject pauseScreen;
 
     public GoatManager goat;
 
@@ -72,6 +73,7 @@ public class LevelManager : MonoBehaviour {
     }
 
     public void ResetLevel(){
+        Time.timeScale = 1.0f;
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
     }
@@ -97,4 +99,20 @@ public class LevelManager : MonoBehaviour {
         darkScreen.SetTrigger("Fade");
         
     }
+
+    public void PauseGame(){
+        darkScreen.SetTrigger("fade");
+        pauseScreen.SetActive(true);
+        Time.timeScale = 0.0f;
+    }
+
+    public void ResumeGame(){
+        darkScreen.SetTrigger("unfade");
+        pauseScreen.SetActive(false);
+        Time.timeScale = 1.0f;
+    }
+
+
+
+
 }
