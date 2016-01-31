@@ -17,6 +17,7 @@ public class TouchPoint : MonoBehaviour {
     public void SendTouchLeaveMessage(){
         if( heldObject != null){
             heldObject.OnTouchEnd(transform.position);
+            heldObject.isHeld = false;
             heldObject = null;
 
         }

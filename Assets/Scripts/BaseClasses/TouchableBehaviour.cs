@@ -4,12 +4,19 @@ using System.Collections;
 public class TouchableBehaviour : MonoBehaviour {
 
 
-    private  bool isHeld;
+    public  bool isHeld;
+    private Vector3 holdPos;
 
     void Awake(){
         isHeld = false;
     }
 
+
+    void FixedUpdate(){
+        if(isHeld){
+            OnTouchHeld(holdPos);
+        }
+    }
    
 
     void OnTriggerEnter2D(Collider2D col){
@@ -25,7 +32,8 @@ public class TouchableBehaviour : MonoBehaviour {
         if( col.gameObject.tag == "TouchPoint"){
             Debug.Log("Finger On Object");
             isHeld = true;
-            OnTouchHeld(col.transform.position);
+            holdPos = col.transform.position;
+
         }
     }
         
@@ -33,6 +41,8 @@ public class TouchableBehaviour : MonoBehaviour {
 
     public virtual void OnTouchStart(Vector3 position){}
     public virtual void OnTouchHeld(Vector3 position){}
-    public virtual void OnTouchEnd(Vector3 position){}
+    public virtual void OnTouchEnd(Vector3 position){
+        
+    }
 
 }

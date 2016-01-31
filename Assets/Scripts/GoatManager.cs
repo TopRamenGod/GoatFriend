@@ -13,6 +13,11 @@ public class GoatManager : TouchableBehaviour {
     public Transform basePlatform;
 
     public GoatState State;
+    public ParticleSystem deathParticle;
+
+    public bool isTimeSlow = false;
+
+    Vector3 origVelocity;
 
 
     void Update(){
@@ -35,6 +40,14 @@ public class GoatManager : TouchableBehaviour {
 
         GetComponent<Animator>().SetFloat("horSpeed", Mathf.Abs(direction));
         transform.localScale = scale;
+
+     
+        if ( isTimeSlow){
+                GetComponent<Rigidbody2D>().velocity = origVelocity * 0.05f;
+            }else{
+                origVelocity = GetComponent<Rigidbody2D>().velocity;
+            }
+
     }
 
    
@@ -53,10 +66,18 @@ public class GoatManager : TouchableBehaviour {
     public override void OnTouchHeld(Vector3 position)
     {
 
-        if( Vector3.Distance(position , basePlatform.position ) < 2)
-        {
-            gameObject.transform.position = position;
+        float maxDist = 1.8f;
+        Vector3 toFinger = (position - basePlatform.position);
+
+        if ( toFinger.magnitude > maxDist){
+            toFinger.Normalize();
+            toFinger*=maxDist;
         }
+
+        Vector4 finalPos = basePlatform.position + toFinger;
+       
+            gameObject.transform.position = finalPos;
+      
     }
 
     public override void OnTouchEnd(Vector3 position)
@@ -91,20 +112,33 @@ public class GoatManager : TouchableBehaviour {
 
         if( col.gameObject.tag == "ExitTrigger"){
             Debug.Log("HIT Exit Trigger");
-            State = GoatState.Saved;
 
-            LevelManager.Instance.ShowWinScreen();
+            if( State == GoatState.Falling){
+                State = GoatState.Saved;
+
+                LevelManager.Instance.ShowWinScreen();
+            }
         }
 
         if( col.gameObject.tag == "DeathTrigger"){
-            Debug.Log("You are dead");
-            State = GoatState.Dead;
+           
 
-            AudioManager.instance.playBurnt();
+            if ( State != GoatState.Dead && !isTimeSlow){
+                State = GoatState.Dead;
+                Debug.Log("You are dead");
 
-            UnityTimer.Instance.CallAfterDelay(() => {
-                LevelManager.Instance.ShowDieScreen();
-            }, 1.0f);
+                AudioManager.instance.playBurnt();
+
+                GetComponent<Rigidbody2D>().isKinematic = true;
+                GetComponent<SpriteRenderer>().enabled = false;
+
+                deathParticle.transform.position = transform.position;
+                deathParticle.Simulate(0);
+
+                UnityTimer.Instance.CallAfterDelay(() => {
+                    LevelManager.Instance.ShowDieScreen();
+                }, 1.0f);
+            }
         }
 
         if( col.gameObject.tag == "Collectible"){

@@ -22,7 +22,7 @@ public class LavaMonsterManager : MonoBehaviour {
 
         anim.SetFloat("horSpeed", Mathf.Abs(horSpeed));
 
-
+        anim.SetBool("happy", happy);
         //Flip
         if(Mathf.Abs(horSpeed) > 0.2) {
             Vector3 scale = transform.localScale;
@@ -51,13 +51,13 @@ public class LavaMonsterManager : MonoBehaviour {
         lastHit = col.collider;
     }
 
-    void OnTriggerEnter2D(Collider2D col){
+    void OnTriggerStay2D(Collider2D col){
 
         if( col.gameObject.tag == "HappyTrigger"){
             happy=true;
         }
     }
-    void OnTriggerExitr2D(Collider2D col){
+    void OnTriggerExit2D(Collider2D col){
 
         if( col.gameObject.tag == "HappyTrigger"){
             happy=false;

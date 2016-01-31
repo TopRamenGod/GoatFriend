@@ -22,6 +22,8 @@ public class LevelManager : MonoBehaviour {
     public GameObject dieScreen;
     public GameObject winScreen;
 
+    public GoatManager goat;
+
     public float GameHeight{
         get{
             return _gameHeight;
@@ -61,6 +63,12 @@ public class LevelManager : MonoBehaviour {
         portal.SetActive(true);
         lava.GetComponent<Collider2D>().enabled = false;
         portal.GetComponent<Animator>().SetTrigger("spawn");
+
+        goat.isTimeSlow = true;
+
+        UnityTimer.Instance.CallAfterDelay(() => {
+            goat.isTimeSlow = false;
+        } , 1.5f);
     }
 
     public void ResetLevel(){
