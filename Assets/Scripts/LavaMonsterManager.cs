@@ -69,7 +69,6 @@ public class LavaMonsterManager : MonoBehaviour {
 
         RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.up * -1, 1000.0f, platformsLayer);
 
-        Debug.Log(hit.distance );
         if ( hit.distance > 1.0f) return true;
 
         return false;

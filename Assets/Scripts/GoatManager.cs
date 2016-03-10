@@ -70,7 +70,9 @@ public class GoatManager : TouchableBehaviour {
     public override void OnTouchHeld(Vector3 position)
     {
         if(State != GoatState.Falling){
-            float maxDist = 1.8f;
+            float maxDist =2.0f;
+            GetComponent<Rigidbody2D>().isKinematic = true;
+
             Vector3 toFinger = (position - basePlatform.position);
 
             if ( toFinger.magnitude > maxDist){
@@ -80,7 +82,7 @@ public class GoatManager : TouchableBehaviour {
 
             Vector4 finalPos = basePlatform.position + toFinger;
            
-                gameObject.transform.position = finalPos;
+            gameObject.transform.position = finalPos;
         }
       
     }
@@ -97,6 +99,7 @@ public class GoatManager : TouchableBehaviour {
     public void ReleaseGoat(){
         //Break Hinges
         gameObject.GetComponent<HingeJoint2D>().enabled = false;
+        //gameObject.GetComponent<DistanceJoint2D>().enabled = false;
         //gameObject.GetComponent<Rigidbody2D>().velocity *= 1.5f;
 
         State = GoatState.Falling;
