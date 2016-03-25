@@ -22,7 +22,7 @@ public class RopeSegment : MonoBehaviour {
             TouchPoint tPt = col.GetComponent<TouchPoint>();
             Debug.Log("Finger entered rope");
             float mag = tPt.Velocity.magnitude;
-            if( mag > 10f && mag < 75f && !tPt.IsHolding){
+            if( mag > 2f && mag < 75f && !tPt.IsHolding){
                 Debug.Log("Finger Sliced rope with velocit sqr: " + mag);
 
                 manager.BreakAt(this);

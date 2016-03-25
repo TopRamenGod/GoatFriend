@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.Audio;
+using GoatFriend.Events;
 //#if UNITY_EDITOR
 //using UnityEditor
 //#endif
@@ -15,9 +16,6 @@ public class AudioManager : MonoBehaviour {
 	// for paused/unpaused transitions
 	public AudioMixerSnapshot paused; 
 	public AudioMixerSnapshot unpaused; 
-
-
-	public static AudioManager instance = null;
 
 	// pitch variations for pitch of sound effects
 	public float lowPitchRange = .95f; 
@@ -38,27 +36,58 @@ public class AudioManager : MonoBehaviour {
     public AudioClip portalOpen;
 
 
-	void Awake () {
-		if (instance == null) {
-			instance = this;
-		}
+
 //		} else if (instance != this) {
 //			Destroy (gameObject);
 //		}
 		
 //		DontDestroyOnLoad (gameObject); 
 //		musicSource.Play (); 
-	}
+	
+    void Start(){
+        
+        EventSystem.Instance.GoatDied.AddListener(new SimpleEvent(() => {
+            PlaySingleEffect(burnt);
+        }));
+
+        EventSystem.Instance.GoatWon.AddListener( new SimpleEvent( () => {
+            PlaySingleEffect(portalOpen);
+        }));
+
+        EventSystem.Instance.GoatReleased.AddListener(new SimpleEvent(() => {
+            PlayRandomSounds(sheep1, sheep2, sheep3);
+        }));
+
+        EventSystem.Instance.GoatHit.AddListener( new SimpleEvent(() => {
+            PlayRandomSounds(sheep1, sheep2, sheep3);
+        }));
+
+        EventSystem.Instance.GoatBounced.AddListener( new SimpleEvent(() => {
+            PlayRandomSounds(bounce1, bounce2);
+        }));
+
+        EventSystem.Instance.HeartCollected.AddListener( new SimpleEvent(() => {
+            PlaySingleEffect(collect);
+        }));
+
+//        EventSystem.Instance.GamePaused.AddListener( new SimpleEvent(() => {
+//            paused.TransitionTo (.01f);
+//        }));
+//
+//        EventSystem.Instance.GameResumed.AddListener( new SimpleEvent(() => {
+//            unpaused.TransitionTo (.01f);
+//        }));
+    }
 
 
-	public void PlaySingleEffect (AudioClip clip) {
+	private void PlaySingleEffect (AudioClip clip) {
 		efxSource.clip = clip;
 		efxSource.Play();
 	}
 		
 	// can input objects as a comma separated list
 	// and will be inserted into the array because of params keyword
-	public void randomizeSheepVocals(params AudioClip[] clips) {
+	private void randomizeSheepVocals(params AudioClip[] clips) {
 		int randomIndex = Random.Range (0, clips.Length); 
 		float randomPitch = Random.Range(lowPitchRange, highPitchRange);
 			
@@ -67,7 +96,7 @@ public class AudioManager : MonoBehaviour {
 		efxSource.Play (); 
 	}
 
-	public void PlayRandomSounds(params AudioClip[] clips) {
+	private void PlayRandomSounds(params AudioClip[] clips) {
 		int randomIndex = Random.Range (0, clips.Length); 
 		float randomPitch = Random.Range(lowPitchRange, highPitchRange);
 
@@ -75,48 +104,6 @@ public class AudioManager : MonoBehaviour {
 		efxSource.clip = clips [randomIndex];
 		efxSource.Play (); 
 	}
-
-	// call this when pause has been done
-	public void playPauseSound() {
-		paused.TransitionTo (.01f);
-//		if (Time.timeScale == 0) {
-//			// Lowpass ();
-//			paused.TransitionTo(.01f); 
-//		}
-//		else {
-//			unpaused.TransitionTo(.01f); 
-//		}
-	}
-
-	public void unPausedMusic() {
-		unpaused.TransitionTo (.01f);
-	}
-
-
-
-    public void playBounce(){
-        PlayRandomSounds(bounce1, bounce2);
-    }
-
-
-    public void playSheep(){
-        PlayRandomSounds(sheep1, sheep2, sheep3);
-    }
-
-    public void playBurnt(){
-        PlaySingleEffect(burnt);
-    }
-
-    public void playCollect(){
-        PlaySingleEffect(collect);
-    }
-
-
-    public void playPortalOpen(){
-        PlaySingleEffect(portalOpen);
-    }
-
-
 
 		
 }

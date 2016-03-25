@@ -33,7 +33,7 @@ public class AutoTiler : MonoBehaviour {
         float yTiles = this.transform.localScale.y/SingleY;
 
         if ( xTiles < 1 || yTiles < 1){
-            Debug.LogWarning("Texture is beinf tiled smaller than ideal size");
+            //Debug.LogWarning("Texture is beinf tiled smaller than ideal size");
         }
 
         //Set to the material

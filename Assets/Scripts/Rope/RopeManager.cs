@@ -68,6 +68,11 @@ public class RopeManager : MonoBehaviour {
 
             //Add rope end to previous segment
             int prev = segment.index - 1;
+
+            //handle case when player slices the first/Last segment
+            if ( prev < 0) prev = 0;
+
+
             Transform prevT = segments[prev].transform;
             GameObject breakEnd = new GameObject("RopeEnd");
             breakEnd.transform.parent = prevT;

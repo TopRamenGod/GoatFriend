@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using GoatFriend.Events;
 
 public class LevelManager : MonoBehaviour {
 
@@ -18,11 +19,6 @@ public class LevelManager : MonoBehaviour {
     private float _gameHeight;
 
 
-    public Animator darkScreen;
-    public GameObject dieScreen;
-    public GameObject winScreen;
-    public GameObject pauseScreen;
-
     public GoatManager goat;
 
     public float GameHeight{
@@ -39,6 +35,10 @@ public class LevelManager : MonoBehaviour {
     void Start(){
         _initParams();
         collectedStars = 0;
+
+        //bind handlers
+        EventSystem.Instance.HeartCollected.AddListener(new SimpleEvent(AddStar));
+       
     }
 
 
@@ -67,7 +67,7 @@ public class LevelManager : MonoBehaviour {
 
         goat.isTimeSlow = true;
 
-        AudioManager.instance.playPortalOpen();
+        //AudioManager.instance.playPortalOpen();
 
         UnityTimer.Instance.CallAfterDelay(() => {
             goat.isTimeSlow = false;
@@ -84,36 +84,41 @@ public class LevelManager : MonoBehaviour {
         Scene scene = SceneManager.GetActiveScene();
         int nextScene = scene.buildIndex;
         nextScene++;
-
+        Debug.Log("loading scene :"+nextScene);
         SceneManager.LoadScene(nextScene);
     }
 
-    public void ShowDieScreen(){
-        darkScreen.gameObject.SetActive(true);
-        darkScreen.SetTrigger("Fade");
-        dieScreen.SetActive(true);
+//    public void ShowDieScreen(){
+//        darkScreen.gameObject.SetActive(true);
+//        darkScreen.SetTrigger("Fade");
+//        dieScreen.SetActive(true);
+//    }
+//
+//    public void ShowWinScreen(){
+//
+//        winScreen.SetActive(true);
+//        darkScreen.gameObject.SetActive(true);
+//        darkScreen.SetTrigger("Fade");
+//        
+//    }
+//
+//    public void PauseGame(){
+//        darkScreen.SetTrigger("fade");
+//        pauseScreen.SetActive(true);
+//        Time.timeScale = 0.0f;
+//    }
+//
+//    public void ResumeGame(){
+//        darkScreen.SetTrigger("unfade");
+//        pauseScreen.SetActive(false);
+//        Time.timeScale = 1.0f;
+//    }
+
+    public void Pause(){
+        EventSystem.Instance.GamePaused.TriggerEvent();
     }
 
-    public void ShowWinScreen(){
-
-        winScreen.SetActive(true);
-        darkScreen.gameObject.SetActive(true);
-        darkScreen.SetTrigger("Fade");
-        
-    }
-
-    public void PauseGame(){
-        darkScreen.SetTrigger("fade");
-        pauseScreen.SetActive(true);
-        Time.timeScale = 0.0f;
-    }
-
-    public void ResumeGame(){
-        darkScreen.SetTrigger("unfade");
-        pauseScreen.SetActive(false);
-        Time.timeScale = 1.0f;
-    }
-
+ 
 
 
 

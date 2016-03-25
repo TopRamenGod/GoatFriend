@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using GoatFriend.Events;
 
 public enum GoatState{
     Hanging,
@@ -63,7 +63,8 @@ public class GoatManager : TouchableBehaviour {
         if(State != GoatState.Falling){
             gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
 
-            AudioManager.instance.playSheep();
+            //AudioManager.instance.playSheep();
+            EventSystem.Instance.GoatTouched.TriggerEvent();
         }
     }
 
@@ -99,22 +100,27 @@ public class GoatManager : TouchableBehaviour {
     public void ReleaseGoat(){
         //Break Hinges
         gameObject.GetComponent<HingeJoint2D>().enabled = false;
+
+        gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.up * 3.0f;
         //gameObject.GetComponent<DistanceJoint2D>().enabled = false;
         //gameObject.GetComponent<Rigidbody2D>().velocity *= 1.5f;
 
         State = GoatState.Falling;
 
-        AudioManager.instance.playSheep();
+        EventSystem.Instance.GoatReleased.TriggerEvent();
+        //AudioManager.instance.playSheep();
     }
 
     void OnCollisionEnter2D(Collision2D col){
 
         if( col.gameObject.tag == "SolidPlatform"){
-            AudioManager.instance.playSheep();
+            //AudioManager.instance.playSheep();
+
+            EventSystem.Instance.GoatHit.TriggerEvent();
         }
 
         if( col.gameObject.tag == "BouncyPlatform"){
-            AudioManager.instance.playBounce();
+            EventSystem.Instance.GoatBounced.TriggerEvent();
         }
             
     }
@@ -127,7 +133,9 @@ public class GoatManager : TouchableBehaviour {
             if( State == GoatState.Falling){
                 State = GoatState.Saved;
 
-                LevelManager.Instance.ShowWinScreen();
+//                LevelManager.Instance.ShowWinScreen();
+
+                EventSystem.Instance.GoatWon.TriggerEvent();
             }
         }
 
@@ -138,27 +146,30 @@ public class GoatManager : TouchableBehaviour {
                 State = GoatState.Dead;
                 Debug.Log("You are dead");
 
-                AudioManager.instance.playBurnt();
+                //AudioManager.instance.playBurnt();
+
+                EventSystem.Instance.GoatDied.TriggerEvent();
 
                 GetComponent<Rigidbody2D>().isKinematic = true;
                 GetComponent<SpriteRenderer>().enabled = false;
 
                 deathParticle.transform.position = transform.position;
-                deathParticle.Simulate(0);
+                deathParticle.Play(false);
 
-                UnityTimer.Instance.CallAfterDelay(() => {
-                    LevelManager.Instance.ShowDieScreen();
-                }, 1.0f);
+//                UnityTimer.Instance.CallAfterDelay(() => {
+//                    LevelManager.Instance.ShowDieScreen();
+//                }, 1.0f);
             }
         }
 
         if( col.gameObject.tag == "Collectible"){
             Destroy(col.gameObject);
-            LevelManager.Instance.AddStar();
+            //Fire event to EventSystem
+            EventSystem.Instance.HeartCollected.TriggerEvent();
 
-            GetComponent<ParticleSystem>().Play();
+            GetComponent<ParticleSystem>().Play(false);
 
-            AudioManager.instance.playCollect();
+            //AudioManager.instance.playCollect();
         }
 
     }

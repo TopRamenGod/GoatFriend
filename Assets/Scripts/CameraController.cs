@@ -44,7 +44,7 @@ public class CameraController : MonoBehaviour {
 
 
     public float GetYDisp(){
-        return scrollBar.value * LevelManager.Instance.GameHeight;
+        return 0.0f * LevelManager.Instance.GameHeight;
     }
 
 
