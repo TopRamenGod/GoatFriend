@@ -15,9 +15,9 @@ public class UIManager : MonoBehaviour {
         DarkBackground = GameObject.Find("DarkBackground");
         DarkBackground.SetActive(false);
 
-        EventSystem.Instance.GamePaused.AddListener(new SimpleEvent(OnPause));
-        EventSystem.Instance.GoatDied.AddListener(new SimpleEvent(OnDead));
-        EventSystem.Instance.GoatWon.AddListener(new SimpleEvent(OnWin));
+        EventSystem.Instance.GamePaused.AddListener(new SimpleFunc(OnPause));
+        EventSystem.Instance.GoatDied.AddListener(new SimpleFunc(OnDead));
+        EventSystem.Instance.GoatWon.AddListener(new SimpleFunc(OnWin));
     }
 
 

@@ -19,6 +19,9 @@ public class GoatManager : TouchableBehaviour {
 
     Vector3 origVelocity;
 
+    private int _heartsCollected;
+
+   
 
     void Update(){
 
@@ -54,6 +57,7 @@ public class GoatManager : TouchableBehaviour {
 
     void Start(){
         State = GoatState.Hanging;
+        _heartsCollected = 0;
     }
 
     public override void OnTouchStart(Vector3 position)
@@ -165,7 +169,8 @@ public class GoatManager : TouchableBehaviour {
         if( col.gameObject.tag == "Collectible"){
             Destroy(col.gameObject);
             //Fire event to EventSystem
-            EventSystem.Instance.HeartCollected.TriggerEvent();
+            _heartsCollected++;
+            EventSystem.Instance.HeartCollected.TriggerEvent(_heartsCollected);
 
             GetComponent<ParticleSystem>().Play(false);
 

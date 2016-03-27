@@ -11,6 +11,10 @@ namespace GoatFriend{
              void TriggerEvent();
         }
 
+        public interface IEvent<T1,T2>: IEvent<T1>{
+            void TriggerEvent(T2 data);
+        }
+
         public interface IFunc{
             void Call();
             Delegate GetFunc();
@@ -18,14 +22,18 @@ namespace GoatFriend{
             void RemoveFunc(Delegate func);
         }
 
+        public interface IFunc<T> : IFunc{
+            void Call(T data);
+        }
 
 
-        public struct SimpleEvent: IFunc{
+
+        public struct SimpleFunc: IFunc{
             
             public delegate void SimpleDelegate();
             SimpleDelegate _func;
 
-            public SimpleEvent(SimpleDelegate func){
+            public SimpleFunc(SimpleDelegate func){
                 _func = func;
             }
 
@@ -46,7 +54,36 @@ namespace GoatFriend{
             }
         }
 
-        public class GoatEvent<T>: IEvent<T> where T: IFunc{
+        public struct DataFunc<T>: IFunc<T> where T: struct{
+            public delegate void DataDelegate(T data);
+            DataDelegate _func;
+
+            public DataFunc(DataDelegate func){
+                _func = func;
+            }
+
+            public void Call(){
+                Debug.LogWarning("DataFunc needs data");
+            } 
+
+            public void Call(T data){
+                this._func(data);
+            }
+
+            public Delegate GetFunc(){
+                return _func;
+            }
+
+            public void AddFunc(Delegate func){
+                _func+=(DataDelegate)func;
+            }
+
+            public void RemoveFunc(Delegate func){
+                _func-=(DataDelegate)func;
+            }
+        }
+
+        public class SimpleEvent<T>: IEvent<T> where T: IFunc{
 
             private T _thisEvent;
 
@@ -61,6 +98,31 @@ namespace GoatFriend{
             }
         }
 
+        public class DataEvent<T1,T2>: IEvent<T1,T2> where T1:IFunc<T2>{
+            private T1 _thisEvent;
+
+            public void AddListener(T1 _event){
+                _thisEvent.AddFunc( _event.GetFunc() );
+            }
+
+            public void TriggerEvent(){
+                if( _thisEvent != null ){
+                    _thisEvent.Call();
+                }
+            }
+
+            public void TriggerEvent(T2 data){
+                if( _thisEvent != null ){
+                    _thisEvent.Call(data);
+                }
+            }
+        }
+
+
+
+
+
+
        
 
 
@@ -68,16 +130,17 @@ namespace GoatFriend{
 
             public static EventSystem Instance{get; private set;}
 
-            public IEvent<SimpleEvent> GoatDied;
-            public IEvent<SimpleEvent> GoatWon;
-            public IEvent<SimpleEvent> GoatReleased;
-            public IEvent<SimpleEvent> HeartCollected;
-            public IEvent<SimpleEvent> GamePaused;
-            public IEvent<SimpleEvent> GameResumed;
+            public IEvent<SimpleFunc> GoatDied;
+            public IEvent<SimpleFunc> GoatWon;
+            public IEvent<SimpleFunc> GoatReleased;
+            public IEvent<DataFunc<int>, int> HeartCollected;
+         
+            public IEvent<SimpleFunc> GamePaused;
+            public IEvent<SimpleFunc> GameResumed;
 
-            public IEvent<SimpleEvent> GoatBounced;
-            public IEvent<SimpleEvent> GoatHit;
-            public IEvent<SimpleEvent> GoatTouched;
+            public IEvent<SimpleFunc> GoatBounced;
+            public IEvent<SimpleFunc> GoatHit;
+            public IEvent<SimpleFunc> GoatTouched;
 
             void Awake(){
                 Instance = this;
@@ -85,16 +148,16 @@ namespace GoatFriend{
             }
 
             private void _initEvents(){
-                GoatDied =  new GoatEvent<SimpleEvent>();
-                GoatWon =  new GoatEvent<SimpleEvent>();
-                GoatReleased =  new GoatEvent<SimpleEvent>();
-                HeartCollected =  new GoatEvent<SimpleEvent>();
-                GamePaused =  new GoatEvent<SimpleEvent>();
-                GameResumed =  new GoatEvent<SimpleEvent>();
+                GoatDied =  new SimpleEvent<SimpleFunc>();
+                GoatWon =  new SimpleEvent<SimpleFunc>();
+                GoatReleased =  new SimpleEvent<SimpleFunc>();
+                HeartCollected =  new DataEvent<DataFunc<int>, int>();
+                GamePaused =  new SimpleEvent<SimpleFunc>();
+                GameResumed =  new SimpleEvent<SimpleFunc>();
 
-                GoatBounced =  new GoatEvent<SimpleEvent>();
-                GoatHit =  new GoatEvent<SimpleEvent>();
-                GoatTouched =  new GoatEvent<SimpleEvent>();
+                GoatBounced =  new SimpleEvent<SimpleFunc>();
+                GoatHit =  new SimpleEvent<SimpleFunc>();
+                GoatTouched =  new SimpleEvent<SimpleFunc>();
             }
 
         

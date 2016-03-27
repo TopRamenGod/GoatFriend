@@ -37,7 +37,7 @@ public class LevelManager : MonoBehaviour {
         collectedStars = 0;
 
         //bind handlers
-        EventSystem.Instance.HeartCollected.AddListener(new SimpleEvent(AddStar));
+        EventSystem.Instance.HeartCollected.AddListener(new DataFunc<int>(AddStar));
        
     }
 
@@ -46,8 +46,8 @@ public class LevelManager : MonoBehaviour {
         _gameHeight = Mathf.Abs(levelTop.position.y - levelBottom.position.y);
     }
 
-    public void AddStar(){
-        collectedStars++;
+    public void AddStar(int stars){
+        collectedStars = stars;
 
         if( IsLevelComplete () ){
             ActivatePortal();

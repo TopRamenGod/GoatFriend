@@ -46,27 +46,28 @@ public class AudioManager : MonoBehaviour {
 	
     void Start(){
         
-        EventSystem.Instance.GoatDied.AddListener(new SimpleEvent(() => {
+        EventSystem.Instance.GoatDied.AddListener(new SimpleFunc(() => {
             PlaySingleEffect(burnt);
         }));
 
-        EventSystem.Instance.GoatWon.AddListener( new SimpleEvent( () => {
-            PlaySingleEffect(portalOpen);
-        }));
+//        EventSystem.Instance.AddListener( new SimpleFunc( () => {
+//            PlaySingleEffect(portalOpen);
+//        }));
 
-        EventSystem.Instance.GoatReleased.AddListener(new SimpleEvent(() => {
+        EventSystem.Instance.GoatReleased.AddListener(new SimpleFunc(() => {
             PlayRandomSounds(sheep1, sheep2, sheep3);
         }));
 
-        EventSystem.Instance.GoatHit.AddListener( new SimpleEvent(() => {
+        EventSystem.Instance.GoatHit.AddListener( new SimpleFunc(() => {
             PlayRandomSounds(sheep1, sheep2, sheep3);
         }));
 
-        EventSystem.Instance.GoatBounced.AddListener( new SimpleEvent(() => {
+        EventSystem.Instance.GoatBounced.AddListener( new SimpleFunc(() => {
             PlayRandomSounds(bounce1, bounce2);
         }));
 
-        EventSystem.Instance.HeartCollected.AddListener( new SimpleEvent(() => {
+        EventSystem.Instance.HeartCollected.AddListener( new DataFunc<int>((hearts) => {
+            Debug.Log("Collected:" + hearts);
             PlaySingleEffect(collect);
         }));
 
