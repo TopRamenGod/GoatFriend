@@ -69,6 +69,8 @@ public class AudioManager : MonoBehaviour {
         EventSystem.Instance.HeartCollected.AddListener( new DataFunc<int>((hearts) => {
             Debug.Log("Collected:" + hearts);
             PlaySingleEffect(collect);
+
+            if( hearts == 3)PlaySingleEffect(portalOpen);
         }));
 
 //        EventSystem.Instance.GamePaused.AddListener( new SimpleEvent(() => {
