@@ -16,13 +16,13 @@ public class CameraController : MonoBehaviour {
     }
 
     void Update(){
+        Vector3 _pos = transform.position;
 
         if( goat.State == GoatState.Hanging){
-            float disp = GetYDisp();
-            Vector3 dispVec = new Vector3(0, - disp, 0);
+            
             Vector3 top = LevelManager.Instance.levelTop.position;
 
-            transform.position = top + dispVec;
+            transform.position = new Vector3(_pos.x, top.y, _pos.z) ;
         }
 
 
