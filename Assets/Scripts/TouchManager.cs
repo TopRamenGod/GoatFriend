@@ -9,8 +9,22 @@ public class TouchManager : MonoBehaviour {
     public TouchPool touchPool;
     public LayerMask backgroundLayer;
 
+    public static bool IsTouching{
+        get{
+            return TouchManager.Instance.touchPool.NumTouches > 0;
+        } 
+    }
 
+    public static TouchManager Instance{get; private set;}
+
+  
     public bool MouseDebug;
+
+
+    void Awake(){
+        Instance =this;
+    }
+
 
     void Update(){
 

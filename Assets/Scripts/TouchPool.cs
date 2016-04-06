@@ -5,7 +5,11 @@ using System.Collections.Generic;
 public class TouchPool : MonoBehaviour {
 
     public List<GameObject> touchObjects;
+    public int NumTouches{get; private set;}
 
+    void Awake(){
+        NumTouches = 0;
+    }
 
     public GameObject getTouchObject(int i){
         return touchObjects[i];
@@ -19,6 +23,8 @@ public class TouchPool : MonoBehaviour {
 
         obj.transform.position = position;
         Debug.Log("ACTIVATE OBJECT :"+ i);
+
+        NumTouches++;
     }
 
 
@@ -29,6 +35,8 @@ public class TouchPool : MonoBehaviour {
         obj.GetComponent<TouchPoint>().SendTouchLeaveMessage();
 
         obj.SetActive(false);
+
+        NumTouches--;
     }
 
     public void UpdateObject(int i, Vector3 position){
@@ -40,6 +48,7 @@ public class TouchPool : MonoBehaviour {
         }
 
         obj.transform.position = position;
+
 
     }
 }
